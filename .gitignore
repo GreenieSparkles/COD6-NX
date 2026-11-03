@@ -1,0 +1,63 @@
+# ---------------------------------------------------------------
+# cod6-nx — build output, game data and caches never go in the repo
+# ---------------------------------------------------------------
+
+# Build directories
+out/
+build/
+cmake-build-*/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.lib
+*.exe
+*.nro
+*.nsp
+*.nca
+*.nacp
+*.elf
+*.map
+
+# Generated recompiled code (produced from YOUR copy of the game)
+generated/
+!generated/.gitkeep
+
+# Game data — never commit, never redistribute
+game_root/
+update/
+*.ff
+*.bik
+*.ipak
+*.xex
+*.xzp
+*.pck
+*.sabs
+*.str
+*.dat
+
+# User data and caches
+user/
+cache/
+logs/
+cap/
+captures/
+*.log
+*.spirv
+*.spvidx
+*.cache
+*.tmp
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Python helpers
+__pycache__/
+*.pyc

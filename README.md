@@ -1,5 +1,3 @@
-# COD6-NX
-Call of Duty: Modern Warfare 2 (COD6) ported to Nintendo Switch. ReXGlue (Xenia-based) recompilation with a custom native Vulkan renderer: reads the PM4 ring directly, native texture/pipeline caches, disk-persisted SPIR-V. 20-60 fps, shadows and some dynamic lighting still WIP. Research only; no game data included.
 <div align="center">
 
 # cod6-nx
@@ -30,7 +28,7 @@ PM4 命令环，自己管理纹理、管线和渲染目标，不经过模拟器�
 > [!IMPORTANT]
 > **本仓库不含任何游戏数据。** 你需要自备正版游戏本体，并自行提取 `game_root/`。
 > 仅供学习与技术研究。
-> 本项目完全未完成，帧数非常低！不可正常游玩！且存在大量未完成的性能优化！
+
 ---
 
 ## 当前状态

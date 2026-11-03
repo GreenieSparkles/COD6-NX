@@ -1,0 +1,55 @@
+name: build
+
+# 用 devkitPro 的官方镜像交叉编译 Switch NRO。
+# 只在推送标签或手动触发时跑：完整构建需要 generated/ 里的重编译代码，
+# 那部分由使用者从自己的游戏副本生成，不进仓库。
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: devkitpro/devkita64:latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 检查 generated/ 是否存在
+        id: gen
+        run: |
+          if [ -d generated ] && [ -n "$(ls -A generated 2>/dev/null)" ]; then
+            echo "have=yes" >> "$GITHUB_OUTPUT"
+          else
+            echo "have=no" >> "$GITHUB_OUTPUT"
+            echo "::warning::generated/ 为空（需从游戏副本生成重编译代码），跳过构建"
+          fi
+
+      - name: 安装工具
+        if: steps.gen.outputs.have == 'yes'
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends cmake ninja-build
+
+      - name: 配置
+        if: steps.gen.outputs.have == 'yes'
+        run: |
+          cmake -S . -B out/nx -G Ninja \
+                -DCMAKE_TOOLCHAIN_FILE=$DEVKITPRO/cmake/Switch.cmake \
+                -DCMAKE_BUILD_TYPE=Release
+
+      - name: 构建
+        if: steps.gen.outputs.have == 'yes'
+        run: ninja -C out/nx cod6
+
+      - name: 上传产物
+        if: steps.gen.outputs.have == 'yes'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cod6-nro
+          path: |
+            out/nx/cod6.nro
+            out/nx/cod6.nacp
+          if-no-files-found: error

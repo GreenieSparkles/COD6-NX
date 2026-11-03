@@ -1,0 +1,10 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: 使用与配置问题
+    url: https://github.com/
+    about: 先看 README 的「配置」「诊断」两节，多数问题那里已有答案。
+
+  - name: 已知问题清单
+    url: https://github.com/
+    about: README 的「已知问题」与 CHANGELOG 的「已排除的方向」——提 issue 前请先对照。
