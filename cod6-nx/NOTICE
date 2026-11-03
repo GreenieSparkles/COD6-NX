@@ -1,0 +1,64 @@
+# 第三方组件与授权
+
+本项目以 **GPL-3.0** 分发（见 [LICENSE](LICENSE)）。
+下列第三方组件各自保留原有授权，其声明必须随分发保留。
+
+---
+
+## 运行时与模拟器核心
+
+| 组件 | 授权 | 说明 |
+|---|---|---|
+| Xenia | BSD-3-Clause | Xbox 360 模拟器；ReXGlue 派生的基础 |
+| ReXGlue SDK | BSD-3-Clause | 代码重编译框架、内核与图形运行时 |
+
+Copyright (c) 2022, Ben Vanik and Xenia project contributors
+Copyright (c) 2026, Tom Clay <tomc@tctechstuff.com>
+
+完整声明见 `sdk/LICENSE`。
+
+---
+
+## 第三方库
+
+| 组件 | 授权 | 用途 |
+|---|---|---|
+| SDL3 | Zlib | 窗口、输入、音频 |
+| Vulkan-Headers | Apache-2.0 | Vulkan API 头 |
+| VulkanMemoryAllocator | MIT | 显存分配 |
+| SPIRV-Tools / SPIRV-Headers | Apache-2.0 | 着色器工具链 |
+| glslang | BSD-3-Clause / Apache-2.0 | GLSL → SPIR-V |
+| fmt | MIT | 格式化 |
+| spdlog | MIT | 日志 |
+| xxHash | BSD-2-Clause | 内容哈希 |
+| tomlplusplus | MIT | 配置解析 |
+| imgui | MIT | 调试界面 |
+| stb | MIT / Public Domain | 图像 |
+| simde | MIT | SIMD 兼容 |
+| utf8cpp | BSL-1.0 | UTF-8 |
+| CLI11 | BSD-3-Clause | 命令行 |
+| o1heap | MIT | 分配器 |
+| libmspack | LGPL-2.1 | LZX 解压 |
+
+各组件完整授权文本位于 `sdk/thirdparty/<组件>/`。
+
+---
+
+## 工具链
+
+| 组件 | 授权 |
+|---|---|
+| devkitPro / devkitA64 | 各自授权（GCC、newlib 等） |
+| Mesa / NVK | MIT |
+
+---
+
+## 不包含的内容
+
+**本仓库不包含任何游戏数据。**
+
+Call of Duty: Modern Warfare 2 及其所有资源（`.ff`、`.bik`、`.ipak`、
+纹理、音频、字体等）的版权归 Activision Publishing, Inc. 及其关联方所有。
+使用者需自备正版游戏本体。
+
+项目名、游戏名仅用于说明用途，与权利人无隶属关系。
