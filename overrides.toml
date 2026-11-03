@@ -1,0 +1,78 @@
+# Call of Duty: Modern Warfare 2 (Xbox 360, title 41560817) - analysis corrections for the code generator.
+#
+# Every entry carries its evidence. Produced by the first validation run of
+# `rexglue codegen` on default.xex (2026-10-26), which reported:
+#   "Validation failed: 5 unresolved calls"
+# Each line below is one of those reported cases: a direct unconditional branch (a tail call)
+# to an address that automatic discovery had not assigned to any function. The caller
+# addresses are the ones the validator printed. No sizes are imposed, so the Discover
+# phase determines each boundary from the PPC code itself.
+
+
+# --- setjmp / longjmp (root keys: must stay ABOVE [functions]) -----------------
+# MW2 recovers from Com_Error by longjmp-ing back to a setjmp. A static recompile
+# cannot jump into the middle of a C++ function, so the codegen must route these two
+# through the runtime's ppc_setjmp / ppc_longjmp (the pch already defines them).
+# Evidence, same shape the bo2zm-nx port documented for BO2:
+#   0x823DFF08 setjmp : checks a hook, then stfd f14-f31 -> 0..136(r3),
+#                       std r13-r31 -> 152..296(r3), stvx128 v64-v127 -> 320..(r3)
+#   0x823E08C0 longjmp: mr r6,r4 (val), then lfd f14-f31 / ld r13-r31 from r7 = r3
+# Without them the guest longjmp returns through a stale link register and the stack
+# pointer walks up past the top of the thread stack: r1 = 0x7015FFC0 against a
+# 0x70160000 stack top, then a write into the guard page.
+# --- codegen performance switches ------------------------------------------------
+# Copiado del proyecto de PC, donde ya estaba validado. El comentario original lo
+# dice sin rodeos: "These four are what separate a playable build from a slideshow
+# on Switch."
+#   xer_as_local          quita 172.403 accesos a ctx.xer
+#   ctr_as_local          quita 32.637 accesos a ctx.ctr
+#   non_volatile_as_local mantiene r14-r31 en registros reales: quita 23.857
+#                         llamadas a __savegprlr_* / __restgprlr_*
+#   cr_as_local           mantiene el registro de condicion en una local
+# Todos vienen a false por defecto, que es lo que llevaba este build.
+#
+# No se activan, por las mismas razones que da la referencia:
+#   non_argument_as_local  localizaria r12, que __savevmx_N recibe como argumento
+#   skip_lr                cualquier hook que lea ctx.lr dejaria de verlo
+cr_as_local = true
+xer_as_local = true
+ctr_as_local = true
+non_volatile_as_local = true
+setjmp_address = 0x823DFF10
+longjmp_address = 0x823E08C0
+[functions]
+"0x82267FC8" = { }  # tail call from 0x8226C304
+"0x823F1D74" = { }  # tail call from 0x82126B0C
+"0x823F1D84" = { }  # tail call from 0x82126D88
+"0x823F1D94" = { }  # tail call from 0x821266D8
+"0x82091758" = { }  # tail call from 0x8209498C
+
+# Stage 3 boot attempt in WSL2 (2026-10-26 23:08): the runtime stopped with
+# "[FATAL] Call to invalid or unregistered function at guest address 0x8209CFC8"
+# (logs/cod6_005.log). A pointer-reached entry: registered here so the generator
+# emits it and the function table covers it.
+"0x8209CFC8" = { }
+
+# Stage 4 boot attempt (2026-10-27): after the network-init patch let the game past
+# the fatal "Failed to set socket to nonblocking" path, the runtime stopped with
+# "[FATAL] Call to invalid or unregistered function at guest address 0x820AFE98".
+# Registered here so the generator emits it.
+"0x820AFE98" = { }
+
+# Stage 1 gameplay: entering a Special Ops mission (2026-10-27 23:11) stopped with
+#
+#   [critical] [core] [t11747] [FATAL] Unresolved call from 0x823F1D90 to 0x82126D8C
+#
+# The generated code for sub_823F1D84 ends with `b 0x82126D8C` and the generator had no
+# function starting there, so it emitted a REX_FATAL instead of the tail call:
+#
+#   DEFINE_REX_FUNC(sub_823F1D84) { ... // b 0x82126d8c
+#       REX_FATAL("Unresolved call from 0x823F1D90 to 0x82126D8C"); }
+#
+# Same shape as the three tail calls already listed above (0x823F1D74 / 0x823F1D84 /
+# 0x823F1D94): a branch into the middle of a larger routine that discovery never made a
+# function entry.  The three targets below are the ones the surviving REX_FATAL stubs name
+# (cod6_recomp.33.cpp:35935, cod6_recomp.36.cpp:32129, cod6_recomp.48.cpp:35483).
+"0x82126D8C" = { }  # tail call from sub_823F1D84 (REX_FATAL at 0x823F1D90)
+"0x821266DC" = { }  # tail call from sub_823F1D94 (REX_FATAL at 0x823F1DA0)
+"0x82126B10" = { }  # tail call from sub_823F1D74 (REX_FATAL at 0x823F1D80)
