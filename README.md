@@ -130,9 +130,11 @@
 >    - **引擎技术**：IW Engine（源自 id Tech 3），游戏内含经 **id Software** 授权的 id Technology（id Technology © 1999-2009 id Software, Inc.）
 >    - **在线服务**：**Demonware**（Activision 旗下）
 >    - **视频编码**：**RAD Game Tools** 的 Bink Video（游戏数据中的 `.bik` 文件即 Bink）
+>    - **原版平台 / Original platform**：**Xbox 360** —— **Microsoft Corporation** 的 game console
+>    - **现权利归属 / Current ownership**：Activision Blizzard 自 **2023 年 10 月** 起为 **Microsoft Corporation** 旗下，上述开发与发行单位均为其子公司
 >    - **本移植的目标平台**：**Nintendo Switch**（Nintendo 与本项目无关）
 >
->    本项目与上述任何公司**均无关系**，未获其授权或认可；所有商标与版权归各自所有者。
+>    本项目与 Microsoft Corporation、Activision Blizzard、Activision Publishing, Inc.、Infinity Ward、Beenox、Demonware、id Software、Nintendo **均无关系**，未获其授权或认可；所有商标与版权归各自所有者。
 > 4. 本项目**按现状提供，不附带任何担保**，包括但不限于可用性、稳定性、特定用途适用性。使用风险由使用者自行承担。
 > 5. 因使用本项目导致的**任何直接或间接损失**（存档损坏、主机异常、账号问题、数据丢失等），作者**不承担责任**。
 > 6. 本项目**可能随时停止更新**，作者没有义务修复任何问题、回复任何提问或提供任何支持。
@@ -148,9 +150,11 @@
 >    - **Engine technology:** IW Engine (derived from id Tech 3); the game contains id Technology licensed from **id Software** (id Technology © 1999-2009 id Software, Inc.)
 >    - **Online services:** **Demonware** (an Activision company)
 >    - **Video codec:** **RAD Game Tools**' Bink Video (the `.bik` files in the game data are Bink)
+>    - **Original platform:** **Xbox 360** — a game console of **Microsoft Corporation**
+>    - **Current ownership:** since **October 2023**, Activision Blizzard has been part of **Microsoft Corporation**; all the developers and publishers listed above are its subsidiaries
 >    - **Target platform of this port:** **Nintendo Switch** (Nintendo has no involvement in this project)
 >
->    This project is **not affiliated with, authorised by, or endorsed by** any of the above; all trademarks and copyrights belong to their respective owners.
+>    This project is **not affiliated with, authorised by, or endorsed by** Microsoft Corporation, Activision Blizzard, Activision Publishing, Inc., Infinity Ward, Beenox, Demonware, id Software or Nintendo. All trademarks and copyrights belong to their respective owners.
 > 4. Provided **“as is”, without warranty of any kind**, express or implied, including but not limited to availability, stability or fitness for a particular purpose. You use it at your own risk.
 > 5. The author **accepts no liability** for any direct or indirect damage arising from its use (corrupted saves, console anomalies, account issues, data loss, etc.).
 > 6. Development **may stop at any time**. The author is under no obligation to fix anything, answer questions or provide support.
