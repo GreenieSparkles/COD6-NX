@@ -1,5 +1,20 @@
 # Porting an Xbox 360 game to the Nintendo Switch, from scratch
 
+<!-- AUTHOR-BANNER -->
+> # ⚠️ 半成品 · 严禁商用 · 严禁盗用
+>
+> **作者：一个没有人看的UP主**　｜　**B站 UID 122607497**　｜　**GitHub：GreenieSparkles**
+>
+> - **这是半成品。** 大量已知与未知 bug，参数和实现随时会变，不保证能通关、能玩完。
+> - **严禁商业用途。** 不得售卖、不得用于付费内容、不得捆绑进任何收费产品或服务、不得用于引流变现。
+> - **严禁盗用与冒名。** 转载 / 搬运 / 二次打包**必须保留本署名与声明**，并注明来源仓库。
+> - **致 Telegram「DarkNSP」群的搬运者：** 看到这个 GitHub 后，请**不要再打包包含游戏资源的整合包**。
+>   这里只是半成品，bug 一大堆还没修；把游戏本体塞进去一起发，既侵权，也会让玩家误以为是成品。要搬运请只搬仓库本身和这份声明。
+>
+> 仓库：https://github.com/GreenieSparkles/COD6-NX
+<!-- /AUTHOR-BANNER -->
+
+
 This guide follows the road Sonic Adventure 2 took: from a `default.xex` to a native Switch build that runs at 60 FPS
 at the console's stock clocks. It is written for someone starting another game with this toolchain. It covers the
 order of work, the tools of this repository, the traps that cost days, and every optimisation the port uses, in the
