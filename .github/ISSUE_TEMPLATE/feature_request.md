@@ -5,7 +5,7 @@
 >
 > 我想先问你一句：**发布之前，你自己跑过一遍吗？**
 >
-> 哪怕只跑十分钟——进到第二个关卡，低头看一眼脚下的地面。你会看见贴图在你眼前一点一点地烂掉：桌面变成显示器的花纹，墙皮变成别人的广告牌，枪口焰炸成一整块巨大的方块。你会看见画面一黑一亮，像一盏坏了很久的日光灯。你会看见帧数在三十五和六十之间乱跳，跳到你根本瞄不准人。
+> 哪怕只跑十分钟——进到第二个关卡，低头看一眼脚下的地面。你会看见贴图在你眼前一点一点地烂掉：**墙上长出人脸，桌子变成电视，弹匣变成砖头**，枪口焰炸成一整块巨大的方块。你会看见画面一黑一亮，像一盏坏了很久的日光灯。至于帧数——**那个「三十五到六十」是我在特别行动「坑道（The Pit）」那种小场景里测出来的；一到真正有人物、有战斗的关卡，帧数直接掉到个位数**，卡到你连准星都推不动。
 >
 > 你看见了，你还会发吗？
 >
@@ -15,7 +15,7 @@
 >
 > 而你，把它包装成「可以玩」，发给了一群相信你的人。
 >
-> **我这两天已经看到太多这样的评论了。** 有人说「下载完进游戏就花屏」，有人说「走两步就崩」，有人说「根本没法玩，白下了六个 G」，也有人客客气气地问我：「作者，这个版本是不是还没做完？」
+> **电报群里已经有几个人下载完，发现它根本没法玩。** 有人截图说「进游戏就花屏」，有人说「走两步就崩了」，也有人客客气气地问我：「作者，这个版本是不是还没做完？」
 >
 > 他们不是来骂我的，他们是**失望**。他们花几个小时等下载、等解压、等安装，最后拿到一个连菜单都撑不住的版本。他们的时间、他们的硬盘、他们那份期待，被你一次「顺手打包」消耗干净了。
 >
@@ -25,7 +25,7 @@
 >
 > 如果你连这三件事都不愿意做，那就**别搬**。
 >
-> 我做这个东西，是因为我想知道一台 2019 年的掌机能不能跑动 2009 年的引擎；想知道 PM4 命令环能不能被重新读懂；想知道重编译出来的 ARM64 代码能不能把几十万面的场景推上屏幕。我不是为了流量，也清楚它现在拿不出手。
+> **我把它放到 GitHub 上，是因为我在这个阶段卡住了。** 贴图这个问题我已经绕了三百多轮还没绕出来，一个人做不下去了——**开源就是想让愿意一起弄的人进来**。我做这个东西，是因为我想知道一台 2019 年的掌机能不能跑动 2009 年的引擎；想知道 PM4 命令环能不能被重新读懂；想知道重编译出来的 ARM64 代码能不能把几十万面的场景推上屏幕。我不是为了流量，也清楚它现在拿不出手。
 >
 > 所以请你，别拿它去骗人。
 >
@@ -39,7 +39,7 @@
 >
 > So let me ask you one thing first: **did you even run it once before you shipped it?**
 >
-> Ten minutes would have been enough — load the second mission, look down at the ground under your feet. You would watch the textures rot in front of you: a table turning into a monitor panel, a wall turning into somebody else’s billboard, the muzzle flash exploding into one giant solid block. You would watch the screen flip between black and bright like a dying fluorescent tube. You would watch the frame rate thrash between thirty-five and sixty until you cannot aim at anything.
+> Ten minutes would have been enough — load the second mission, look down at the ground under your feet. You would watch the textures rot in front of you: **faces growing out of the walls, tables turning into televisions, magazines turning into bricks**, the muzzle flash exploding into one giant solid block. You would watch the screen flip between black and bright like a dying fluorescent tube. And the frame rate? **That “thirty-five to sixty” was measured in a tiny Special Ops map, “The Pit”. In any real level with characters and combat it drops to single digits** — so slow that you cannot even push the crosshair around.
 >
 > If you had seen that, would you still have posted it?
 >
@@ -49,7 +49,7 @@
 >
 > And you wrapped it up as “playable” and handed it to people who trusted you.
 >
-> **In the last two days I have seen far too many of these comments.** “Textures are corrupted as soon as the game starts.” “It crashed after two steps.” “Completely unplayable, six gigabytes wasted.” And, politely: “Author, is this version not finished yet?”
+> **In the Telegram group a few people have already downloaded it and found that it simply cannot be played.** One of them posted a screenshot: “textures corrupt the moment the game starts.” Another: “it crashed after two steps.” And one, politely: “Author, is this version not finished yet?”
 >
 > They are not angry at me. They are **disappointed**. They spent hours waiting for the download, waiting for the extraction, waiting for the install, and ended up with something that cannot even hold a menu together. Their time, their disk space and their expectations were burned by your one careless repack.
 >
@@ -59,7 +59,7 @@
 >
 > If you are not willing to do even those three things, then **do not share it at all**.
 >
-> I built this because I wanted to know whether a handheld from 2019 can run an engine from 2009; whether the PM4 command ring can be understood again; whether recompiled ARM64 code can push a scene of hundreds of thousands of triangles onto that screen. I am not doing it for traffic, and I know perfectly well that it is not presentable yet.
+> **I put this on GitHub because I am stuck at this stage.** I have been going around the texture problem for more than three hundred test runs and I cannot get past it alone — **open-sourcing it is my way of asking for help**. I built this because I wanted to know whether a handheld from 2019 can run an engine from 2009; whether the PM4 command ring can be understood again; whether recompiled ARM64 code can push a scene of hundreds of thousands of triangles onto that screen. I am not doing it for traffic, and I know perfectly well that it is not presentable yet.
 >
 > So please — do not use it to deceive people.
 >
