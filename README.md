@@ -218,3 +218,12 @@ generated/      由 XEX 重编译生成的 PPC 代码（不入库）
 - ReXGlue — Xbox 360 代码重编译框架
 - devkitPro / devkitA64 — Switch 自制程序工具链
 - NVK / Mesa — Switch 上的 Vulkan 驱动
+---
+
+## 开发历程
+
+这个移植做过 **314 次实机测试**，每一次的时间、版本、日志都在这里：
+
+- [开发历程（全部 314 次实机测试）](docs/开发历程.md) — 按日期分组，标北京时间，含里程碑与专题索引
+- [PC 软解环境 · 已知陷阱](docs/PC软解-已知陷阱.md) — 多开进程伪装成渲染 bug、呈现模式、backing store、键盘注入格式等
+- [构建与调试](docs/BUILD.md)
