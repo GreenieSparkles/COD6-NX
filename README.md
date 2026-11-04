@@ -124,7 +124,15 @@
 >
 > 1. 本项目**仅供学习与技术研究**，目的是研究 Xbox 360 程序的重编译与图形 API 的移植，不提供、不包含、不分发任何游戏数据。
 > 2. 使用本项目需要你**自己合法拥有**《使命召唤：现代战争2》的正版游戏。请自行准备游戏文件。
-> 3. 本项目与 Activision Publishing, Inc.、Infinity Ward、id Software、Nintendo **没有任何关系**，未获其授权或认可。所有商标与版权归各自所有者。
+> 3. **相关作品与权利归属（均与本项目无关）：**
+>    - **原版 / Original**：*Call of Duty: Modern Warfare 2*（**2009**）——开发 **Infinity Ward**，发行 **Activision Publishing, Inc.**
+>    - **战役重制版 / Campaign Remastered**：*Call of Duty: Modern Warfare 2 Campaign Remastered*（**2020**）——开发 **Beenox**，发行 **Activision Publishing, Inc.**
+>    - **引擎技术**：IW Engine（源自 id Tech 3），游戏内含经 **id Software** 授权的 id Technology（id Technology © 1999-2009 id Software, Inc.）
+>    - **在线服务**：**Demonware**（Activision 旗下）
+>    - **视频编码**：**RAD Game Tools** 的 Bink Video（游戏数据中的 `.bik` 文件即 Bink）
+>    - **本移植的目标平台**：**Nintendo Switch**（Nintendo 与本项目无关）
+>
+>    本项目与上述任何公司**均无关系**，未获其授权或认可；所有商标与版权归各自所有者。
 > 4. 本项目**按现状提供，不附带任何担保**，包括但不限于可用性、稳定性、特定用途适用性。使用风险由使用者自行承担。
 > 5. 因使用本项目导致的**任何直接或间接损失**（存档损坏、主机异常、账号问题、数据丢失等），作者**不承担责任**。
 > 6. 本项目**可能随时停止更新**，作者没有义务修复任何问题、回复任何提问或提供任何支持。
@@ -134,7 +142,15 @@
 >
 > 1. This project is **for study and technical research only** — it explores recompiling Xbox 360 code and porting a graphics API. It does not provide, contain or distribute any game data.
 > 2. You must **legally own** a genuine copy of *Call of Duty: Modern Warfare 2*. Supply the game files yourself.
-> 3. This project is **not affiliated with, authorised by, or endorsed by** Activision Publishing, Inc., Infinity Ward, id Software or Nintendo. All trademarks and copyrights belong to their respective owners.
+> 3. **Related titles and rights ownership (none of them affiliated with this project):**
+>    - **Original:** *Call of Duty: Modern Warfare 2* (**2009**) — developed by **Infinity Ward**, published by **Activision Publishing, Inc.**
+>    - **Campaign Remastered:** *Call of Duty: Modern Warfare 2 Campaign Remastered* (**2020**) — developed by **Beenox**, published by **Activision Publishing, Inc.**
+>    - **Engine technology:** IW Engine (derived from id Tech 3); the game contains id Technology licensed from **id Software** (id Technology © 1999-2009 id Software, Inc.)
+>    - **Online services:** **Demonware** (an Activision company)
+>    - **Video codec:** **RAD Game Tools**' Bink Video (the `.bik` files in the game data are Bink)
+>    - **Target platform of this port:** **Nintendo Switch** (Nintendo has no involvement in this project)
+>
+>    This project is **not affiliated with, authorised by, or endorsed by** any of the above; all trademarks and copyrights belong to their respective owners.
 > 4. Provided **“as is”, without warranty of any kind**, express or implied, including but not limited to availability, stability or fitness for a particular purpose. You use it at your own risk.
 > 5. The author **accepts no liability** for any direct or indirect damage arising from its use (corrupted saves, console anomalies, account issues, data loss, etc.).
 > 6. Development **may stop at any time**. The author is under no obligation to fix anything, answer questions or provide support.
