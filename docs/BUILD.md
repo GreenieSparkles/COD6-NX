@@ -39,7 +39,8 @@
 >
 > 所以请你，别拿它去骗人。
 >
-> —— 一个没有人看的UP主　BILIBILI UID 122607497　2026-11
+> —— 一个没有人看的UP主
+> BILIBILI（B站）UID **122607497**　｜　GitHub **GreenieSparkles**　｜　2026-11
 >
 > ---
 >
@@ -79,7 +80,8 @@
 >
 > So please — do not use it to deceive people.
 >
-> — 一个没有人看的UP主　BILIBILI UID 122607497　November 2026
+> — 一个没有人看的UP主
+> BILIBILI UID **122607497**　｜　GitHub **GreenieSparkles**　｜　November 2026
 >
 > ---
 >
