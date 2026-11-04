@@ -15,7 +15,15 @@
 >
 > 而你，把它包装成「可以玩」，发给了一群相信你的人。
 >
-> **电报群里已经有几个人下载完，发现它根本没法玩。** 有人截图说「进游戏就花屏」，有人说「走两步就崩了」，也有人客客气气地问我：「作者，这个版本是不是还没做完？」
+> **电报群里已经有人下载完，发现它根本没法玩。原话我一个字都没有改：**
+
+> 「Masih bnyak bug, misi tutorial aja bug masalah render, fps nya juga anjlok, tunggu update aja itupun klo ada, yg mau main cod mnding main yg black OPS 2 atau MW 1 aja」
+>
+> *（印尼语：bug 还很多，连教学任务都有渲染问题，帧数也崩了；等更新吧——如果有的话。真想玩 COD，不如去玩 Black Ops 2 或者 MW1。）*
+
+> 「not playable yet, and having texture issues.」
+>
+> *（英语：还不能玩，而且有贴图问题。）*
 >
 > 他们不是来骂我的，他们是**失望**。他们花几个小时等下载、等解压、等安装，最后拿到一个连菜单都撑不住的版本。他们的时间、他们的硬盘、他们那份期待，被你一次「顺手打包」消耗干净了。
 >
@@ -49,7 +57,13 @@
 >
 > And you wrapped it up as “playable” and handed it to people who trusted you.
 >
-> **In the Telegram group a few people have already downloaded it and found that it simply cannot be played.** One of them posted a screenshot: “textures corrupt the moment the game starts.” Another: “it crashed after two steps.” And one, politely: “Author, is this version not finished yet?”
+> **People in the Telegram group have already downloaded it and found that it simply cannot be played. These are their words, unedited:**
+
+> “Masih bnyak bug, misi tutorial aja bug masalah render, fps nya juga anjlok, tunggu update aja itupun klo ada, yg mau main cod mnding main yg black OPS 2 atau MW 1 aja”
+>
+> *(Indonesian: still lots of bugs — even the tutorial mission has rendering problems, and the frame rate collapses. Just wait for an update, if there ever is one. If you actually want to play Call of Duty, go play Black Ops 2 or MW1 instead.)*
+
+> “not playable yet, and having texture issues.”
 >
 > They are not angry at me. They are **disappointed**. They spent hours waiting for the download, waiting for the extraction, waiting for the install, and ended up with something that cannot even hold a menu together. Their time, their disk space and their expectations were burned by your one careless repack.
 >
