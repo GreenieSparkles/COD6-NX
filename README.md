@@ -1,93 +1,16 @@
 <!-- AUTHOR-BANNER -->
-> # 🚫⛔ 致 Telegram「DarkNSP」搬运者的一封公开信 ⛔🚫
+> # ⛔ 严禁把开发版打包成“完整游戏”分发
+> # ⛔ DO NOT PACKAGE THIS DEVELOPMENT BUILD AS A COMPLETE DISTRIBUTION
 >
-> 我知道你在看。你可能已经点开这个页面，扫了一眼，觉得「又是那个做半成品的人」，然后顺手把它和几个 G 的游戏文件塞进一个压缩包，配上三步「安装教程」——**第一步，把根目录复制到卡上；第二步，安装 NSP 前端；第三步，玩**——就发进群里了。
-> **一句 bug 都没提。** 没提贴图会烂，没提帧数会掉到个位数，没提它根本还没做完。
+> **任何组织和个人，严禁将本开发版擅自打包成“完整文件 / 解压即玩”的形式分发。**
+> **这并不是版权原因**（仓库本身不含任何游戏数据，见下方免责声明），
+> **而是因为本开发版本严重不可玩**：贴图会随着游玩持续崩坏，帧数在剧情关卡会掉到个位数，
+> 大量功能尚未完成。把它包装成“成品”交给别人，是不负责任的。
 >
-> 我想先问你一句：**发布之前，你自己跑过一遍吗？**
+> **No organisation or individual may repackage this development build as a “complete,” “extract-and-play” distribution.** This is **not** about copyright — the repository contains no game data, see the disclaimer below. It is because **this build is severely unplayable**: textures keep breaking down as you play, the frame rate collapses to single digits in campaign missions, and large parts are unfinished. Presenting it as a finished product is irresponsible.
 >
-> 哪怕只跑**一分钟**——在出生点附近看看就行，**不用进第二关**。你会看见贴图在你眼前一点一点地烂掉：**墙上长出人脸，桌子变成电视，弹匣变成砖头**，枪口焰炸成一整块巨大的方块。你会看见画面一黑一亮，像一盏坏了很久的日光灯。至于帧数——**那个「三十五到六十」是我在特别行动「坑道（The Pit）」那种小场景里测出来的；你但凡进的是剧情关卡，帧数就奇差无比，屏幕上有人物、有战斗的时候直接掉到个位数**，卡到你连准星都推不动。
->
-> 你看见了，你还会发吗？
->
-> 我想你不会。因为**你连一次都没跑过**。你只是看见一个 GitHub 链接，看见「COD6 移植 Switch」这七个字，就把它当成了流量。你没有下载过这个项目，没有在自己机器上试过哪怕一关，没有读过 README 里那句被我加粗了三遍的「这是半成品」。你甚至不知道它跑到第几帧会崩。
->
-> 可我知道。**三百一十四轮实机测试，全在这儿。** 我知道它在选枪台会烂，知道光照只有角色两米以内是亮的，知道枪焰会变成一块砖头。我比任何人都清楚它现在有多糟——因为我就是那个从 **10 月 26 日下完 ISO** 起、一路盯着它烂了 **九天** 的人。
->
-> 而你，把它包装成「可以玩」，发给了一群相信你的人。
->
-> **电报群里已经有人下载完，发现它根本没法玩。原话我一个字都没有改：**
-
-> 「Masih bnyak bug, misi tutorial aja bug masalah render, fps nya juga anjlok, tunggu update aja itupun klo ada, yg mau main cod mnding main yg black OPS 2 atau MW 1 aja」
->
-> *（印尼语：bug 还很多，连教学任务都有渲染问题，帧数也崩了；等更新吧——如果有的话。真想玩 COD，不如去玩 Black Ops 2 或者 MW1。）*
-
-> 「not playable yet, and having texture issues.」
->
-> *（英语：还不能玩，而且有贴图问题。）*
->
-> 他们不是来骂我的，他们是**失望**。他们花几个小时等下载、等解压、等安装，最后拿到一个连菜单都撑不住的版本。他们的时间、他们的硬盘、他们那份期待，被你一次「顺手打包」消耗干净了。
->
-> **这不是分享，这是转嫁。** 你把我的半成品，连同我的名声，一起打包送了出去：出了问题，骂的是我；拿到流量的是你。
->
-> 我不反对搬运。这个项目放在 GitHub 上就是给所有人看的。你要转，可以——**只转仓库，附上声明，写清楚「半成品、有大量 bug、不保证能玩」**。至于你把游戏本体一起打包——**那不是我的事**，那是动视暴雪和 Infinity Ward 的事（not my business），我不管。
-> 但你**不能不负责任**：别写「解压即玩」，那是骗人；别把它说成成品；别省略那句「不保证可玩」——那是我唯一能替玩家守住的东西。
->
-> 如果你连这三件事都不愿意做，那就**别搬**。
->
-> **我把它放到 GitHub 上，是因为我在这个阶段卡住了。** 贴图这个问题我已经绕了三百多轮还没绕出来，一个人做不下去了——**开源就是想让愿意一起弄的人进来**。这套开源的移植框架——**ReXGlue**——已经诞生了一大批优秀的经典作品：**MW1、BO2、USF4、MK9** 等等，一个接一个被搬上了掌机，而且跑得都还算像样。既然它们可以，我相信一台 **2019 年的设备同样可以完美跑动 2009 年的这款作品**。
->
-> 做这件事是出于热爱：我太喜欢这一代了，也太想看着它在这块屏幕上活过来。我不是为了流量，也清楚它现在拿不出手。
->
-> 所以请你，别拿它去骗人。
->
-> —— 一个没有人看的UP主
-> BILIBILI（B站）UID **122607497**　｜　GitHub **GreenieSparkles**　｜　2026-11
->
-> ---
->
-> # 🚫⛔ An Open Letter to the Repackers in the Telegram Group “DarkNSP” ⛔🚫
->
-> I know you are reading this. Maybe you opened this page, skimmed it, thought “oh, that unfinished project again”, then dropped it into an archive together with a few gigabytes of game files, added a three-step “installation guide” — **step one, copy the root folder to the SD card; step two, install the NSP front-end; step three, play** — and pushed it into your group.
-> **Not a single word about the bugs.** Not about the textures rotting, not about the frame rate collapsing to single digits, not about the fact that it is not finished at all.
->
-> So let me ask you one thing first: **did you even run it once before you shipped it?**
->
-> **One minute** would have been enough — just look around the spawn area. You do not even need to reach the second mission. You would watch the textures rot in front of you: **faces growing out of the walls, tables turning into televisions, magazines turning into bricks**, the muzzle flash exploding into one giant solid block. You would watch the screen flip between black and bright like a dying fluorescent tube. And the frame rate? **That “thirty-five to sixty” was measured in a tiny Special Ops map, “The Pit”. The moment you enter a campaign mission the frame rate is dreadful; with characters and combat on screen it drops to single digits** — so slow that you cannot even push the crosshair around.
->
-> If you had seen that, would you still have posted it?
->
-> I do not think so. Because **you never ran it once**. You saw a GitHub link, you saw “COD6 ported to Switch”, and you treated it as traffic. You never downloaded this project, never played a single mission on your own console, never read the line in the README that I had to bold three times: *this is a work in progress*. You do not even know at which frame it crashes.
->
-> I do. **Three hundred and fourteen recorded test runs, all of them documented here.** I know it falls apart in the loadout screen, I know the lighting only reaches two metres around the player, I know the muzzle flash turns into a brick. Nobody on this planet knows how bad it currently is better than I do — because I am the one who has been staring at it rot for **nine straight days, ever since I finished downloading the ISO on 26 October**.
->
-> And you wrapped it up as “playable” and handed it to people who trusted you.
->
-> **People in the Telegram group have already downloaded it and found that it simply cannot be played. These are their words, unedited:**
-
-> “Masih bnyak bug, misi tutorial aja bug masalah render, fps nya juga anjlok, tunggu update aja itupun klo ada, yg mau main cod mnding main yg black OPS 2 atau MW 1 aja”
->
-> *(Indonesian: still lots of bugs — even the tutorial mission has rendering problems, and the frame rate collapses. Just wait for an update, if there ever is one. If you actually want to play Call of Duty, go play Black Ops 2 or MW1 instead.)*
-
-> “not playable yet, and having texture issues.”
->
-> They are not angry at me. They are **disappointed**. They spent hours waiting for the download, waiting for the extraction, waiting for the install, and ended up with something that cannot even hold a menu together. Their time, their disk space and their expectations were burned by your one careless repack.
->
-> **This is not sharing. This is shifting the cost onto someone else.** You packed up my unfinished build — and my reputation — and shipped it out. When it breaks, I am the one who gets blamed, and you are the one who gets the attention.
->
-> I am not against sharing. This project is on GitHub for everyone to read. Share it if you want — **share the repository, attach this notice, and state plainly: work in progress, many bugs, no guarantee that it is playable.** As for bundling the game data in — **that is not my business**; it is between you and Activision Blizzard and Infinity Ward. I do not care about that.
-> But you **cannot be irresponsible**: do not write “just extract and play”, that is a lie; do not present it as finished; do not drop the “no guarantee that it is playable” line, because that sentence is the only thing I can still hold on to on behalf of the players.
->
-> If you are not willing to do even those three things, then **do not share it at all**.
->
-> **I put this on GitHub because I am stuck at this stage.** I have been going around the texture problem for more than three hundred test runs and I cannot get past it alone — **open-sourcing it is my way of asking for help**. This open-source porting framework — **ReXGlue** — has already produced a whole line of excellent classic titles: **MW1, BO2, USF4, MK9** and more, brought onto handheld hardware one after another, and running well enough. If those can do it, then a device from **2019 can certainly run a game from 2009 perfectly**.
->
-> I am doing this out of love: I adore this generation of games, and I badly want to see it come alive on this screen. I am not doing it for traffic, and I know perfectly well that it is not presentable yet.
->
-> So please — do not use it to deceive people.
->
-> — 一个没有人看的UP主
-> BILIBILI UID **122607497**　｜　GitHub **GreenieSparkles**　｜　November 2026
+> 想要转发，请**只转发仓库链接**，并如实写明：半成品、有大量 bug、不保证能玩。
+> If you want to share it, share **the repository link only**, and state plainly: work in progress, many bugs, no guarantee it is playable.
 >
 > ---
 >
@@ -206,7 +129,7 @@ PM4 命令环，自己管理纹理、管线和渲染目标，不经过模拟器�
 |---|:---:|---|
 | 启动 / 进入游戏 | ✅ | 初始化 9 个阶段全过，可进入关卡与选枪界面 |
 | 帧数 | 🟡 | 默认画质 22~32 fps；`very_low` 预设实测 **35~60 fps** |
-| 静态贴图 | ✅ | DXT1 / DXT5 / DXN 上传正确（导出贴图逐像素验证） |
+| 静态贴图 | 🟡 | DXT1 / DXT5 / DXN **上传本身正确**（逐块验证），但运行中已上传的贴图会**在显存里被小段改坏**，未解决 |
 | 着色器缓存 | ✅ | SPIR-V 翻译落盘复用，二次启动读回 700+ 条目 / 98 MB |
 | 顶点数据 | ✅ | 按绘制范围拷贝，约 **0.1 MB/帧**、哈希 0.7 ms |
 | 法线 / 平表面 | ❌ | 部分平表面出现蓝紫噪纹，**未解决** |
@@ -359,8 +282,11 @@ generated/      由 XEX 重编译生成的 PPC 代码（不入库）
 
 ## 已知问题
 
-1. **平表面蓝紫噪纹** — 部分表面（选枪台、集装箱）呈彩色噪点。
-   已排除：纹理内容被改坏（4.5 万次检查 0 变化）、显存池块复用、DXN 通道顺序。
+1. **贴图在运行中持续崩坏** — 选枪台显示成武器零件图集、墙面出现绿条纹、
+   手里的枪材质变黑，而且**越玩越糟**。已经用日志排除：fetch 常量解码、
+   图像对象别名、显存池块复用、原地重写、录制线程、memexport、mip 链上传、
+   非确定性渲染。剩下的判据是"guest 侧本来就没有数据"还是"上传拷贝没落地"，
+   见 CHANGELOG 2026-11-05-355 一节。
 2. **枪焰 / 尘土显示为巨型方块** — memexport 写入通路未完成。
 3. **仅角色附近被照亮** — 光照体积（lightgrid）打包未移植。
 4. **长时间游玩后新贴图失真** — 显存只增不减，触顶后新纹理分配失败。
