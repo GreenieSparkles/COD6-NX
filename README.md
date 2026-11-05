@@ -1,3 +1,10 @@
+<!-- AI-TOOL -->
+> # 🤖 本项目使用 AI 开发工具：**Deepseek-V41-Flash**
+>
+> 代码、诊断记录与文档**由 AI 参与完成**（大量排查轮次、补丁与文档出自 AI）。
+> AI 参与开发**不代表** AI 对可用性负责 —— 本项目依然是**半成品**，详见下方声明。
+<!-- /AI-TOOL -->
+
 <!-- AUTHOR-BANNER -->
 > # ⛔ 严禁把开发版打包成“完整游戏”分发
 > # ⛔ DO NOT PACKAGE THIS DEVELOPMENT BUILD AS A COMPLETE DISTRIBUTION
@@ -96,10 +103,13 @@
 
 Xbox 360 代码重编译为 ARM64 · 自研原生 Vulkan 渲染器 · 不含任何游戏数据
 
+**🤖 使用 AI 开发工具：Deepseek-V41-Flash**
+
 [![状态](https://img.shields.io/badge/状态-WIP-yellow)]()
 [![帧数](https://img.shields.io/badge/实机-20~60%20fps-blue)]()
 [![平台](https://img.shields.io/badge/平台-Switch%20(NVK)-red)]()
 [![授权](https://img.shields.io/badge/授权-GPL--3.0-green)](LICENSE)
+[![AI](https://img.shields.io/badge/AI%20开发-Deepseek--V41--Flash-8a2be2)]()
 
 [简介](#简介) · [状态](#当前状态) · [安装](#安装) · [配置](#配置) · [诊断](#诊断) · [构建](#构建) · [已知问题](#已知问题) · [授权](#授权)
 
