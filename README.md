@@ -1,3 +1,27 @@
+<!-- HELP-WANTED -->
+> # 🙌 欢迎广大开发者一起参与 · CONTRIBUTORS WELCOME
+>
+> **我卡住了，一个人做不下去了。** 贴图在运行中持续崩坏这个问题，我已经绕了很多很多轮还没绕出来
+> ——**开源就是想让愿意一起弄的人进来。**
+>
+> 现在**最需要帮忙**的四件事（按想知道答案的程度排序）：
+>
+> 1. **贴图在运行中崩坏**（当前卡点）：已上传的贴图会在显存里被小段改写，越玩越糟。
+>    已经用日志排除了 fetch 常量解码、图像对象别名、显存池块复用、原地重写、录制线程、
+>    memexport、mip 链上传、非确定性渲染 —— 完整记录见
+>    [CHANGELOG 2026-11-05-355](CHANGELOG.md)。
+> 2. **光照体积（lightgrid）未移植**：目前只有角色附近是亮的。
+> 3. **memexport 写入通路未完成**：枪焰 / 尘土显示成巨型方块。
+> 4. **帧数与显存回收**：显存只增不减，长时间游玩后新贴图分配失败。
+>
+> 欢迎 **Issue**（附日志 + `cod6.toml` + 截图）、**Pull Request**、或者只是来讨论思路：
+> [Issues](https://github.com/GreenieSparkles/COD6-NX/issues)　｜　[CONTRIBUTING.md](CONTRIBUTING.md)
+>
+> A problem I have not been able to solve for many rounds: **textures keep breaking down while
+> the game runs.** That is why this is open source — if you want to dig in, please do.
+> Issues with logs, pull requests and plain discussion are all welcome.
+<!-- /HELP-WANTED -->
+
 <!-- AI-TOOL -->
 > # 🤖 本项目使用 AI 开发工具：**Deepseek-V41-Flash**
 >
