@@ -1,3 +1,27 @@
+> # 🛑 本项目已停止更新
+> # 🛑 THIS PROJECT IS DISCONTINUED
+>
+> **原因：已经有可用的移植发布——[kyokoxdev/mw2nx](https://github.com/kyokoxdev/mw2nx)。**
+> **Reason: a working port has been released — [kyokoxdev/mw2nx](https://github.com/kyokoxdev/mw2nx).**
+>
+> cod6-nx 从 2026-10-26 做到 2026-11-05，共 332 轮实机测试，做到了能启动、能进关卡、小场景 35~60 fps，
+> 但**贴图崩坏问题始终没有解决**，最终定位到 Switch 上的 NVK 图形驱动，而不是本项目的代码。
+>
+> 既然 [mw2nx](https://github.com/kyokoxdev/mw2nx) 已经发布了可用版本，**本项目不再继续开发**。
+> 仓库里的源码、文档、314 轮实测记录**全部保留**，供后来者参考——尤其是[交接文档](docs/记录/08-交接与总结/交接文档-2026-11-05.md)
+> 和[开发历程](docs/开发历程.md)里记录的那些死路，能帮别人少走弯路。
+>
+> **请改用 [kyokoxdev/mw2nx](https://github.com/kyokoxdev/mw2nx)。**
+>
+> cod6-nx ran from 2026-10-26 to 2026-11-05 over 332 on-console test rounds. It boots, loads levels
+> and reaches 35-60 fps in small scenes, but **the texture corruption was never fixed**; the evidence
+> finally pointed at the NVK graphics driver on the Switch, not at this project's code.
+>
+> Since a working port now exists, **development stops here**. The sources, documents and all 314
+> recorded test rounds stay in the repository for reference. **Use [kyokoxdev/mw2nx](https://github.com/kyokoxdev/mw2nx) instead.**
+
+---
+
 <!-- HELP-WANTED -->
 > # 🙌 欢迎广大开发者一起参与 · CONTRIBUTORS WELCOME
 >

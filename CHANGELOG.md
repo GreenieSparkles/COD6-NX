@@ -1,5 +1,15 @@
 # 变更记录
 
+## 2026-11-05 — 停止更新
+
+本项目停止开发。原因：已有可用移植发布 [kyokoxdev/mw2nx](https://github.com/kyokoxdev/mw2nx)。
+
+最后一版：**v332**（cod6.nro md5 7284DF469B2B28CA345E73DD4996B02E）。
+
+未解决的问题、已排除的方向、下一步计划，全部写在
+[交接文档](docs/记录/08-交接与总结/交接文档-2026-11-05.md)。
+
+
 <!-- AUTHOR-BANNER -->
 > **⚠️ 半成品 · 严禁商用 · 严禁盗用**　｜　作者：BILIBILI（B站）**一个没有人看的UP主** UID **122607497**　｜　GitHub **GreenieSparkles**
 >
